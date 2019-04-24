@@ -13,10 +13,11 @@
 		BB0AF4F8226FAB77000E0810 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB0AF4F6226FAB77000E0810 /* Main.storyboard */; };
 		BB0AF4FA226FAB78000E0810 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB0AF4F9226FAB78000E0810 /* Assets.xcassets */; };
 		BB0AF4FD226FAB78000E0810 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB0AF4FB226FAB78000E0810 /* LaunchScreen.storyboard */; };
-		BB0AF508226FAB78000E0810 /* PingPongRecorderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0AF507226FAB78000E0810 /* PingPongRecorderTests.swift */; };
 		BB0AF517226FD907000E0810 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0AF516226FD907000E0810 /* LoginVC.swift */; };
 		BB4EAD8922709E9800E2CB3F /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4EAD8822709E9800E2CB3F /* ProfileVC.swift */; };
 		BB4EAD8B22709F4100E2CB3F /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4EAD8A22709F4100E2CB3F /* Game.swift */; };
+		BB4EAD8C2270A29B00E2CB3F /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4EAD8A22709F4100E2CB3F /* Game.swift */; };
+		BB4EAD902270A32100E2CB3F /* GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4EAD8F2270A32100E2CB3F /* GameTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,11 +40,11 @@
 		BB0AF4FC226FAB78000E0810 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB0AF4FE226FAB78000E0810 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB0AF503226FAB78000E0810 /* PingPongRecorderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PingPongRecorderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB0AF507226FAB78000E0810 /* PingPongRecorderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingPongRecorderTests.swift; sourceTree = "<group>"; };
 		BB0AF509226FAB78000E0810 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB0AF516226FD907000E0810 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		BB4EAD8822709E9800E2CB3F /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		BB4EAD8A22709F4100E2CB3F /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		BB4EAD8F2270A32100E2CB3F /* GameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +101,8 @@
 		BB0AF506226FAB78000E0810 /* PingPongRecorderTests */ = {
 			isa = PBXGroup;
 			children = (
-				BB0AF507226FAB78000E0810 /* PingPongRecorderTests.swift */,
 				BB0AF509226FAB78000E0810 /* Info.plist */,
+				BB4EAD8F2270A32100E2CB3F /* GameTests.swift */,
 			);
 			path = PingPongRecorderTests;
 			sourceTree = "<group>";
@@ -246,7 +247,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB0AF508226FAB78000E0810 /* PingPongRecorderTests.swift in Sources */,
+				BB4EAD8C2270A29B00E2CB3F /* Game.swift in Sources */,
+				BB4EAD902270A32100E2CB3F /* GameTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

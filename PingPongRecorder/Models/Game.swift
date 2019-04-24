@@ -11,9 +11,16 @@ import Foundation
 // Serializable ping pong game data model
 class Game : Codable {
     
-    var title: String
-    var userScore: Int
-    var opponentScore: Int
+    var title: String!
+    var userScore: Int!
+    var opponentScore: Int!
+    
+    // Initialize the game data
+    init(title: String, userScore: Int, opponentScore: Int) {
+        self.title = title
+        self.userScore = userScore
+        self.opponentScore = opponentScore
+    }
     
     // Check if the user won this game
     func userDidWin() -> Bool {
