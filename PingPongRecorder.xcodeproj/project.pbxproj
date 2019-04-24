@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		BB0AF4F1226FAB77000E0810 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0AF4F0226FAB77000E0810 /* AppDelegate.swift */; };
-		BB0AF4F3226FAB77000E0810 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0AF4F2226FAB77000E0810 /* FirstViewController.swift */; };
-		BB0AF4F5226FAB77000E0810 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0AF4F4226FAB77000E0810 /* SecondViewController.swift */; };
+		BB0AF4F3226FAB77000E0810 /* GamesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0AF4F2226FAB77000E0810 /* GamesVC.swift */; };
+		BB0AF4F5226FAB77000E0810 /* LeaderboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0AF4F4226FAB77000E0810 /* LeaderboardVC.swift */; };
 		BB0AF4F8226FAB77000E0810 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB0AF4F6226FAB77000E0810 /* Main.storyboard */; };
 		BB0AF4FA226FAB78000E0810 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB0AF4F9226FAB78000E0810 /* Assets.xcassets */; };
 		BB0AF4FD226FAB78000E0810 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB0AF4FB226FAB78000E0810 /* LaunchScreen.storyboard */; };
 		BB0AF508226FAB78000E0810 /* PingPongRecorderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0AF507226FAB78000E0810 /* PingPongRecorderTests.swift */; };
+		BB0AF517226FD907000E0810 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0AF516226FD907000E0810 /* LoginVC.swift */; };
+		BB4EAD8922709E9800E2CB3F /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4EAD8822709E9800E2CB3F /* ProfileVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,8 +31,8 @@
 /* Begin PBXFileReference section */
 		BB0AF4ED226FAB77000E0810 /* PingPongRecorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PingPongRecorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB0AF4F0226FAB77000E0810 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BB0AF4F2226FAB77000E0810 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		BB0AF4F4226FAB77000E0810 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		BB0AF4F2226FAB77000E0810 /* GamesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesVC.swift; sourceTree = "<group>"; };
+		BB0AF4F4226FAB77000E0810 /* LeaderboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardVC.swift; sourceTree = "<group>"; };
 		BB0AF4F7226FAB77000E0810 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BB0AF4F9226FAB78000E0810 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB0AF4FC226FAB78000E0810 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +40,8 @@
 		BB0AF503226FAB78000E0810 /* PingPongRecorderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PingPongRecorderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB0AF507226FAB78000E0810 /* PingPongRecorderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingPongRecorderTests.swift; sourceTree = "<group>"; };
 		BB0AF509226FAB78000E0810 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB0AF516226FD907000E0810 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		BB4EAD8822709E9800E2CB3F /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +83,10 @@
 		BB0AF4EF226FAB77000E0810 /* PingPongRecorder */ = {
 			isa = PBXGroup;
 			children = (
+				BB0AF51B226FE30F000E0810 /* Models */,
+				BB0AF51A226FE305000E0810 /* Views */,
+				BB0AF512226FAF5B000E0810 /* Controllers */,
 				BB0AF4F0226FAB77000E0810 /* AppDelegate.swift */,
-				BB0AF4F2226FAB77000E0810 /* FirstViewController.swift */,
-				BB0AF4F4226FAB77000E0810 /* SecondViewController.swift */,
 				BB0AF4F6226FAB77000E0810 /* Main.storyboard */,
 				BB0AF4F9226FAB78000E0810 /* Assets.xcassets */,
 				BB0AF4FB226FAB78000E0810 /* LaunchScreen.storyboard */,
@@ -97,6 +102,31 @@
 				BB0AF509226FAB78000E0810 /* Info.plist */,
 			);
 			path = PingPongRecorderTests;
+			sourceTree = "<group>";
+		};
+		BB0AF512226FAF5B000E0810 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BB0AF4F4226FAB77000E0810 /* LeaderboardVC.swift */,
+				BB0AF4F2226FAB77000E0810 /* GamesVC.swift */,
+				BB0AF516226FD907000E0810 /* LoginVC.swift */,
+				BB4EAD8822709E9800E2CB3F /* ProfileVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BB0AF51A226FE305000E0810 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BB0AF51B226FE30F000E0810 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,9 +230,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB0AF4F5226FAB77000E0810 /* SecondViewController.swift in Sources */,
+				BB4EAD8922709E9800E2CB3F /* ProfileVC.swift in Sources */,
+				BB0AF517226FD907000E0810 /* LoginVC.swift in Sources */,
+				BB0AF4F5226FAB77000E0810 /* LeaderboardVC.swift in Sources */,
 				BB0AF4F1226FAB77000E0810 /* AppDelegate.swift in Sources */,
-				BB0AF4F3226FAB77000E0810 /* FirstViewController.swift in Sources */,
+				BB0AF4F3226FAB77000E0810 /* GamesVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

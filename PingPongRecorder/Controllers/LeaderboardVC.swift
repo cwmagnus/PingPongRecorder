@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  LeaderboardVC.swift
 //  PingPongRecorder
 //
 //  Created by Chris Magnuson on 4/23/19.
@@ -8,13 +8,10 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class LeaderboardVC : UIViewController {
 
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
-
 }
-
