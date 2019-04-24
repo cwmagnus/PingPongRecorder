@@ -16,6 +16,7 @@
 		BB0AF508226FAB78000E0810 /* PingPongRecorderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0AF507226FAB78000E0810 /* PingPongRecorderTests.swift */; };
 		BB0AF517226FD907000E0810 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0AF516226FD907000E0810 /* LoginVC.swift */; };
 		BB4EAD8922709E9800E2CB3F /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4EAD8822709E9800E2CB3F /* ProfileVC.swift */; };
+		BB4EAD8B22709F4100E2CB3F /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4EAD8A22709F4100E2CB3F /* Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		BB0AF509226FAB78000E0810 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB0AF516226FD907000E0810 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		BB4EAD8822709E9800E2CB3F /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		BB4EAD8A22709F4100E2CB3F /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 		BB0AF51B226FE30F000E0810 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BB4EAD8A22709F4100E2CB3F /* Game.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB4EAD8922709E9800E2CB3F /* ProfileVC.swift in Sources */,
+				BB4EAD8B22709F4100E2CB3F /* Game.swift in Sources */,
 				BB0AF517226FD907000E0810 /* LoginVC.swift in Sources */,
 				BB0AF4F5226FAB77000E0810 /* LeaderboardVC.swift in Sources */,
 				BB0AF4F1226FAB77000E0810 /* AppDelegate.swift in Sources */,
