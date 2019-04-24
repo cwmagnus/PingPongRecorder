@@ -5,7 +5,31 @@
 	<key>logFormatVersion</key>
 	<integer>9</integer>
 	<key>logs</key>
-	<dict/>
+	<dict>
+		<key>425A41BA-577B-4DD7-BA62-C5F432481FC0</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
+			<key>fileName</key>
+			<string>425A41BA-577B-4DD7-BA62-C5F432481FC0.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>signature</key>
+			<string>PingPongRecorder-aktfsmaqcccnspczureewqaqilzf</string>
+			<key>timeStartedRecording</key>
+			<real>577758538.49331701</real>
+			<key>timeStoppedRecording</key>
+			<real>577758545.59038699</real>
+			<key>title</key>
+			<string>Build target PingPongRecorder</string>
+			<key>uniqueIdentifier</key>
+			<string>425A41BA-577B-4DD7-BA62-C5F432481FC0</string>
+		</dict>
+	</dict>
 	<key>preserveOldLogs</key>
 	<true/>
 </dict>
