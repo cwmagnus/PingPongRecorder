@@ -8,8 +8,12 @@
 
 import UIKit
 
+// Leaderboard view controller
 class LeaderboardVC : UIViewController {
 
+    private let refreshControl = UIRefreshControl()
+    
+    // Load the view
     override func viewDidLoad() {
         
         super.viewDidLoad()
