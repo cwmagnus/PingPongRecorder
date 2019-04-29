@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84CF50095A72F361BA8F1AC7 /* Pods_PingPongRecorder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE44EE2623AFBFE0A9478A3B /* Pods_PingPongRecorder.framework */; };
 		BB0AF4F1226FAB77000E0810 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0AF4F0226FAB77000E0810 /* AppDelegate.swift */; };
 		BB0AF4F3226FAB77000E0810 /* GamesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0AF4F2226FAB77000E0810 /* GamesVC.swift */; };
 		BB0AF4F5226FAB77000E0810 /* LeaderboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0AF4F4226FAB77000E0810 /* LeaderboardVC.swift */; };
@@ -21,6 +22,7 @@
 		BB4EAD9422738B0200E2CB3F /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4EAD9322738B0200E2CB3F /* RegisterVC.swift */; };
 		BB85581322776618008FECC0 /* Main.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB85581222776618008FECC0 /* Main.xcassets */; };
 		BB855815227769AB008FECC0 /* TitleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB855814227769AB008FECC0 /* TitleVC.swift */; };
+		F824BF41E30FC6272A3238A9 /* Pods_PingPongRecorderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52A484FDE01ED629195C42B4 /* Pods_PingPongRecorderTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0934778B11B9BBE5492E6A10 /* Pods-PingPongRecorder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PingPongRecorder.debug.xcconfig"; path = "Target Support Files/Pods-PingPongRecorder/Pods-PingPongRecorder.debug.xcconfig"; sourceTree = "<group>"; };
+		0CE518C3AA538F76583CF12C /* Pods-PingPongRecorder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PingPongRecorder.release.xcconfig"; path = "Target Support Files/Pods-PingPongRecorder/Pods-PingPongRecorder.release.xcconfig"; sourceTree = "<group>"; };
+		52A484FDE01ED629195C42B4 /* Pods_PingPongRecorderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PingPongRecorderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB0AF4ED226FAB77000E0810 /* PingPongRecorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PingPongRecorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB0AF4F0226FAB77000E0810 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB0AF4F2226FAB77000E0810 /* GamesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesVC.swift; sourceTree = "<group>"; };
@@ -49,8 +54,11 @@
 		BB4EAD8F2270A32100E2CB3F /* GameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTests.swift; sourceTree = "<group>"; };
 		BB4EAD912270AB8700E2CB3F /* AddGameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGameVC.swift; sourceTree = "<group>"; };
 		BB4EAD9322738B0200E2CB3F /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		BB801C7A90E0FF4915DE1471 /* Pods-PingPongRecorderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PingPongRecorderTests.debug.xcconfig"; path = "Target Support Files/Pods-PingPongRecorderTests/Pods-PingPongRecorderTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BB85581222776618008FECC0 /* Main.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Main.xcassets; sourceTree = "<group>"; };
 		BB855814227769AB008FECC0 /* TitleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleVC.swift; sourceTree = "<group>"; };
+		F9AA305E2AC74EA21AF74CAD /* Pods-PingPongRecorderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PingPongRecorderTests.release.xcconfig"; path = "Target Support Files/Pods-PingPongRecorderTests/Pods-PingPongRecorderTests.release.xcconfig"; sourceTree = "<group>"; };
+		FE44EE2623AFBFE0A9478A3B /* Pods_PingPongRecorder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PingPongRecorder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84CF50095A72F361BA8F1AC7 /* Pods_PingPongRecorder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F824BF41E30FC6272A3238A9 /* Pods_PingPongRecorderTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +87,8 @@
 				BB0AF4EF226FAB77000E0810 /* PingPongRecorder */,
 				BB0AF506226FAB78000E0810 /* PingPongRecorderTests */,
 				BB0AF4EE226FAB77000E0810 /* Products */,
+				FFC70C756A0C380BC592CDA7 /* Pods */,
+				FE16BC50555B3F2618EB2A2C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,6 +154,27 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		FE16BC50555B3F2618EB2A2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE44EE2623AFBFE0A9478A3B /* Pods_PingPongRecorder.framework */,
+				52A484FDE01ED629195C42B4 /* Pods_PingPongRecorderTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FFC70C756A0C380BC592CDA7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0934778B11B9BBE5492E6A10 /* Pods-PingPongRecorder.debug.xcconfig */,
+				0CE518C3AA538F76583CF12C /* Pods-PingPongRecorder.release.xcconfig */,
+				BB801C7A90E0FF4915DE1471 /* Pods-PingPongRecorderTests.debug.xcconfig */,
+				F9AA305E2AC74EA21AF74CAD /* Pods-PingPongRecorderTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -149,9 +182,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB0AF50C226FAB78000E0810 /* Build configuration list for PBXNativeTarget "PingPongRecorder" */;
 			buildPhases = (
+				B4D4075E734FC2759D2EE6C9 /* [CP] Check Pods Manifest.lock */,
 				BB0AF4E9226FAB77000E0810 /* Sources */,
 				BB0AF4EA226FAB77000E0810 /* Frameworks */,
 				BB0AF4EB226FAB77000E0810 /* Resources */,
+				3FAB4C696644D7BB0137DC21 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -166,6 +201,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB0AF50F226FAB78000E0810 /* Build configuration list for PBXNativeTarget "PingPongRecorderTests" */;
 			buildPhases = (
+				D59C0E9CE3EE5A561D0802C6 /* [CP] Check Pods Manifest.lock */,
 				BB0AF4FF226FAB78000E0810 /* Sources */,
 				BB0AF500226FAB78000E0810 /* Frameworks */,
 				BB0AF501226FAB78000E0810 /* Resources */,
@@ -239,6 +275,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3FAB4C696644D7BB0137DC21 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PingPongRecorder/Pods-PingPongRecorder-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PingPongRecorder/Pods-PingPongRecorder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4D4075E734FC2759D2EE6C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PingPongRecorder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D59C0E9CE3EE5A561D0802C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PingPongRecorderTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BB0AF4E9226FAB77000E0810 /* Sources */ = {
@@ -414,6 +519,7 @@
 		};
 		BB0AF50D226FAB78000E0810 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0934778B11B9BBE5492E6A10 /* Pods-PingPongRecorder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -432,6 +538,7 @@
 		};
 		BB0AF50E226FAB78000E0810 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CE518C3AA538F76583CF12C /* Pods-PingPongRecorder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +557,7 @@
 		};
 		BB0AF510226FAB78000E0810 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB801C7A90E0FF4915DE1471 /* Pods-PingPongRecorderTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +579,7 @@
 		};
 		BB0AF511226FAB78000E0810 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9AA305E2AC74EA21AF74CAD /* Pods-PingPongRecorderTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

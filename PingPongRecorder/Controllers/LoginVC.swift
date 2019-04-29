@@ -7,21 +7,36 @@
 //
 
 import UIKit
+import Alamofire
 
-// Login page view controller
 class LoginVC : UIViewController {
     
-    // Load the view
+    @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
     override func viewDidLoad() {
-        
         super.viewDidLoad()
-    }
-    
-    // Login the user
-    @IBAction func loginClicked(_ sender: Any) {
         
-        // TODO: Do processing and check if the user logged in successfully
-        performSegue(withIdentifier: "LoginSuccess", sender: self)
+        usernameTextField.becomeFirstResponder()
     }
     
+    @IBAction func loginClicked(_ sender: Any) {
+        let parameters: [String: String] = [
+            "username": usernameTextField.text!,
+            "password": passwordTextField.text!
+        ]
+        
+        request("https://ping-pong-recorder-api.herokuapp.com/login", method: .post, parameters: parameters, encoding: JSONEncoding.default)
+            .responseJSON(completionHandler: loginCallback)
+    }
+    
+    @IBAction func registerClicked(_ sender: Any) {
+        performSegue(withIdentifier: "Register", sender: self)
+    }
+    
+    private func loginCallback(response: DataResponse<Any>) {
+        if (response.response?.statusCode == 200) {
+            performSegue(withIdentifier: "LoginSuccess", sender: self)
+        }
+    }
 }

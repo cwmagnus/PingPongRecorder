@@ -1,0 +1,6 @@
+framework module Pods_PingPongRecorderTests {
+  umbrella header "Pods-PingPongRecorderTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

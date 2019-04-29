@@ -6,4 +6,11 @@
 //  Copyright © 2019 Chris Magnuson. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class RegisterVC : UIViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+}
