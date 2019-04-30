@@ -50,7 +50,7 @@ class LeaderboardVC : UIViewController, UITableViewDataSource {
         return cell
     }
     
-    // Load game content
+    // Load leaderboard content
     private func loadUserContent() {
         
         data = []
@@ -65,17 +65,17 @@ class LeaderboardVC : UIViewController, UITableViewDataSource {
         ]
         
         request("https://ping-pong-recorder-api.herokuapp.com/user-list", method: .get, encoding: JSONEncoding.default, headers: headers)
-            .responseJSON(completionHandler: loadGamesCallback)
+            .responseJSON(completionHandler: loadLeaderboardCallback)
     }
     
     // Called when finished loading
-    private func loadGamesCallback(response: DataResponse<Any>) {
+    private func loadLeaderboardCallback(response: DataResponse<Any>) {
         
         if let jsonResponse = response.result.value as? [String: Any?] {
             
             if response.response?.statusCode == 200 {
                 
-                // Add games loaded to the table
+                // Add users loaded to the table
                 if let users = jsonResponse["users"] as? [[String: Any?]] {
                     
                     for user in users {
@@ -93,7 +93,7 @@ class LeaderboardVC : UIViewController, UITableViewDataSource {
             }
         }
         
-        // If there is data then show the table otherwise show no games found
+        // If there is data then show the table otherwise show no users found
         if data.count > 0 {
             
             leaderBoardTable.isHidden = false
