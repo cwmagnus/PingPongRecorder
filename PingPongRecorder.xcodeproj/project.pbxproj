@@ -15,11 +15,16 @@
 		BB0AF4FD226FAB78000E0810 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB0AF4FB226FAB78000E0810 /* LaunchScreen.storyboard */; };
 		BB0AF517226FD907000E0810 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0AF516226FD907000E0810 /* LoginVC.swift */; };
 		BB4EAD8922709E9800E2CB3F /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4EAD8822709E9800E2CB3F /* ProfileVC.swift */; };
-		BB4EAD8B22709F4100E2CB3F /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4EAD8A22709F4100E2CB3F /* Game.swift */; };
-		BB4EAD8C2270A29B00E2CB3F /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4EAD8A22709F4100E2CB3F /* Game.swift */; };
-		BB4EAD902270A32100E2CB3F /* GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4EAD8F2270A32100E2CB3F /* GameTests.swift */; };
+		BB4EAD902270A32100E2CB3F /* UserValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4EAD8F2270A32100E2CB3F /* UserValidatorTests.swift */; };
 		BB4EAD922270AB8700E2CB3F /* AddGameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4EAD912270AB8700E2CB3F /* AddGameVC.swift */; };
 		BB4EAD9422738B0200E2CB3F /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4EAD9322738B0200E2CB3F /* RegisterVC.swift */; };
+		BB5B1E652277EEC0007F517E /* LoadingOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5B1E642277EEC0007F517E /* LoadingOverlayView.swift */; };
+		BB5B1E672277F2C0007F517E /* LoadingOverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB5B1E662277F2C0007F517E /* LoadingOverlayView.xib */; };
+		BB5B1E692277FCF1007F517E /* GameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5B1E682277FCF1007F517E /* GameCell.swift */; };
+		BB5B1E6B2277FD0F007F517E /* LeaderboardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5B1E6A2277FD0F007F517E /* LeaderboardCell.swift */; };
+		BB5B1E6E2277FD4C007F517E /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5B1E6D2277FD4C007F517E /* Game.swift */; };
+		BB5B1E702277FD62007F517E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5B1E6F2277FD62007F517E /* User.swift */; };
+		BB5B1E7222786EDE007F517E /* UserValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5B1E7122786EDE007F517E /* UserValidator.swift */; };
 		BB85581322776618008FECC0 /* Main.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB85581222776618008FECC0 /* Main.xcassets */; };
 		BB855815227769AB008FECC0 /* TitleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB855814227769AB008FECC0 /* TitleVC.swift */; };
 		F824BF41E30FC6272A3238A9 /* Pods_PingPongRecorderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52A484FDE01ED629195C42B4 /* Pods_PingPongRecorderTests.framework */; };
@@ -50,10 +55,16 @@
 		BB0AF509226FAB78000E0810 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB0AF516226FD907000E0810 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		BB4EAD8822709E9800E2CB3F /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
-		BB4EAD8A22709F4100E2CB3F /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
-		BB4EAD8F2270A32100E2CB3F /* GameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTests.swift; sourceTree = "<group>"; };
+		BB4EAD8F2270A32100E2CB3F /* UserValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserValidatorTests.swift; sourceTree = "<group>"; };
 		BB4EAD912270AB8700E2CB3F /* AddGameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGameVC.swift; sourceTree = "<group>"; };
 		BB4EAD9322738B0200E2CB3F /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		BB5B1E642277EEC0007F517E /* LoadingOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingOverlayView.swift; sourceTree = "<group>"; };
+		BB5B1E662277F2C0007F517E /* LoadingOverlayView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingOverlayView.xib; sourceTree = "<group>"; };
+		BB5B1E682277FCF1007F517E /* GameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCell.swift; sourceTree = "<group>"; };
+		BB5B1E6A2277FD0F007F517E /* LeaderboardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardCell.swift; sourceTree = "<group>"; };
+		BB5B1E6D2277FD4C007F517E /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		BB5B1E6F2277FD62007F517E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BB5B1E7122786EDE007F517E /* UserValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserValidator.swift; sourceTree = "<group>"; };
 		BB801C7A90E0FF4915DE1471 /* Pods-PingPongRecorderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PingPongRecorderTests.debug.xcconfig"; path = "Target Support Files/Pods-PingPongRecorderTests/Pods-PingPongRecorderTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BB85581222776618008FECC0 /* Main.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Main.xcassets; sourceTree = "<group>"; };
 		BB855814227769AB008FECC0 /* TitleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleVC.swift; sourceTree = "<group>"; };
@@ -104,7 +115,8 @@
 		BB0AF4EF226FAB77000E0810 /* PingPongRecorder */ = {
 			isa = PBXGroup;
 			children = (
-				BB0AF51B226FE30F000E0810 /* Models */,
+				BB5B1E7322786EEB007F517E /* Validation */,
+				BB5B1E6C2277FD3F007F517E /* Models */,
 				BB0AF51A226FE305000E0810 /* Views */,
 				BB0AF512226FAF5B000E0810 /* Controllers */,
 				BB0AF4F0226FAB77000E0810 /* AppDelegate.swift */,
@@ -120,7 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				BB0AF509226FAB78000E0810 /* Info.plist */,
-				BB4EAD8F2270A32100E2CB3F /* GameTests.swift */,
+				BB4EAD8F2270A32100E2CB3F /* UserValidatorTests.swift */,
 			);
 			path = PingPongRecorderTests;
 			sourceTree = "<group>";
@@ -142,16 +154,29 @@
 		BB0AF51A226FE305000E0810 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BB5B1E642277EEC0007F517E /* LoadingOverlayView.swift */,
+				BB5B1E662277F2C0007F517E /* LoadingOverlayView.xib */,
+				BB5B1E682277FCF1007F517E /* GameCell.swift */,
+				BB5B1E6A2277FD0F007F517E /* LeaderboardCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		BB0AF51B226FE30F000E0810 /* Models */ = {
+		BB5B1E6C2277FD3F007F517E /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				BB4EAD8A22709F4100E2CB3F /* Game.swift */,
+				BB5B1E6D2277FD4C007F517E /* Game.swift */,
+				BB5B1E6F2277FD62007F517E /* User.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		BB5B1E7322786EEB007F517E /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+				BB5B1E7122786EDE007F517E /* UserValidator.swift */,
+			);
+			path = Validation;
 			sourceTree = "<group>";
 		};
 		FE16BC50555B3F2618EB2A2C /* Frameworks */ = {
@@ -171,7 +196,6 @@
 				BB801C7A90E0FF4915DE1471 /* Pods-PingPongRecorderTests.debug.xcconfig */,
 				F9AA305E2AC74EA21AF74CAD /* Pods-PingPongRecorderTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -263,6 +287,7 @@
 			files = (
 				BB0AF4FD226FAB78000E0810 /* LaunchScreen.storyboard in Resources */,
 				BB85581322776618008FECC0 /* Main.xcassets in Resources */,
+				BB5B1E672277F2C0007F517E /* LoadingOverlayView.xib in Resources */,
 				BB0AF4F8226FAB77000E0810 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,11 +375,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB5B1E702277FD62007F517E /* User.swift in Sources */,
 				BB4EAD8922709E9800E2CB3F /* ProfileVC.swift in Sources */,
+				BB5B1E6B2277FD0F007F517E /* LeaderboardCell.swift in Sources */,
+				BB5B1E7222786EDE007F517E /* UserValidator.swift in Sources */,
 				BB4EAD9422738B0200E2CB3F /* RegisterVC.swift in Sources */,
 				BB855815227769AB008FECC0 /* TitleVC.swift in Sources */,
-				BB4EAD8B22709F4100E2CB3F /* Game.swift in Sources */,
+				BB5B1E692277FCF1007F517E /* GameCell.swift in Sources */,
+				BB5B1E652277EEC0007F517E /* LoadingOverlayView.swift in Sources */,
 				BB0AF517226FD907000E0810 /* LoginVC.swift in Sources */,
+				BB5B1E6E2277FD4C007F517E /* Game.swift in Sources */,
 				BB0AF4F5226FAB77000E0810 /* LeaderboardVC.swift in Sources */,
 				BB0AF4F1226FAB77000E0810 /* AppDelegate.swift in Sources */,
 				BB0AF4F3226FAB77000E0810 /* GamesVC.swift in Sources */,
@@ -366,8 +396,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB4EAD8C2270A29B00E2CB3F /* Game.swift in Sources */,
-				BB4EAD902270A32100E2CB3F /* GameTests.swift in Sources */,
+				BB4EAD902270A32100E2CB3F /* UserValidatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

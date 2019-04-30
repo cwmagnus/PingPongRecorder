@@ -1,5 +1,5 @@
 //
-//  Game.swift
+//  LeaderboardCell.swift
 //  PingPongRecorder
 //
 //  Created by Chris Magnuson on 4/29/19.
