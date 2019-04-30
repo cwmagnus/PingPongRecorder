@@ -6,4 +6,9 @@
 //  Copyright © 2019 Chris Magnuson. All rights reserved.
 //
 
-import Foundation
+// User data structure
+struct User {
+    let username: String!
+    let wins: Int!
+    let losses: Int!
+}

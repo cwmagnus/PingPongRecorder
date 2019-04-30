@@ -6,4 +6,8 @@
 //  Copyright © 2019 Chris Magnuson. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class LeaderBoardCell : UITableViewCell {
+    
+}

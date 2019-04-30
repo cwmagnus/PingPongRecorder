@@ -2,7 +2,7 @@
 //  UserValidatorTests.swift
 //  PingPongRecorderTests
 //
-//  Created by Chris Magnuson on 4/29/19.
+//  Created by Chris Magnuson on 4/30/19.
 //  Copyright © 2019 Chris Magnuson. All rights reserved.
 //
 

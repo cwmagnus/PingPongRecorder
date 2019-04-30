@@ -15,8 +15,11 @@ class RegisterVC : UIViewController {
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var loadingOverlay: LoadingOverlayView!
     
+    // Called when the view is loaded
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
         usernameTextField.becomeFirstResponder()
@@ -24,22 +27,33 @@ class RegisterVC : UIViewController {
     
     // Register the user
     @IBAction func registerPressed(_ sender: Any) {
-        let username: String? = usernameTextField.text
-        let email: String? = emailTextField.text
-        let password: String? = passwordTextField.text
         
-        // If the fields aren't empty try to register the user
-        if (username != nil && email != nil && password != nil) {
-            let parameters: [String: String] = [
-                "username": username!,
-                "email": email!,
-                "password": password!
+        let username: String = usernameTextField.text!
+        let email: String = emailTextField.text!
+        let password: String = passwordTextField.text!
+        
+        // Check if the username, email, and password are valid and register otherwise show an error alert
+        let userValidator = UserValidator()
+        if userValidator.isValid(username: username, email: email, password: password) {
+            
+            let parameters = [
+                "username": username,
+                "email": email,
+                "password": password
             ]
             
+            // Send the register request
             request("https://ping-pong-recorder-api.herokuapp.com/register", method: .post, parameters: parameters, encoding: JSONEncoding.default)
                 .responseJSON(completionHandler: registerCallback)
             
-            // Show
+            view.endEditing(true)
+            loadingOverlay.show()
+        }
+        else {
+            // Show error alert
+            let errorAlert = UIAlertController(title: "Registration Error", message: "Username, email, or password are not in a valid format", preferredStyle: .alert)
+            errorAlert.addAction(UIAlertAction(title: "Dismiss", style: .default))
+            self.present(errorAlert, animated: true, completion: nil)
         }
     }
     
@@ -50,22 +64,30 @@ class RegisterVC : UIViewController {
     
     // Regsister the user callback
     private func registerCallback(response: DataResponse<Any>) {
-        // Check if the response is successful
-        if (response.response?.statusCode == 201) {
-            let successAlert = UIAlertController(title: "Registration Successful", message: "Thank you for registering. Please login to confirm your account.", preferredStyle: .alert)
-            successAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: loginRedirect))
-            self.present(successAlert, animated: true, completion: nil)
-        }
-        else {
-            // Show json error message
-            if let json = response.result.value as? [String: String] {
-                let errorAlert = UIAlertController(title: "Registration Error", message: json["message"], preferredStyle: .alert)
+        
+        // Convert the response into a dictionary
+        if let jsonResponse = response.result.value as? [String: Any?] {
+            
+            // If the result is successful then redirect the user to login
+            if response.response?.statusCode == 201 {
+                
+                let successAlert = UIAlertController(title: "Registration Successful", message: "Thank you for registering. Please login to confirm your account.", preferredStyle: .alert)
+                successAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: loginRedirect))
+                self.present(successAlert, animated: true, completion: nil)
+                
+                performSegue(withIdentifier: "LoginSuccess", sender: self)
+            }
+            else {
+                
+                // Show error alert
+                let errorAlert = UIAlertController(title: "Registration Error", message: jsonResponse["message"] as? String, preferredStyle: .alert)
                 errorAlert.addAction(UIAlertAction(title: "Dismiss", style: .default))
                 self.present(errorAlert, animated: true, completion: nil)
             }
         }
         
-        // Hide
+        view.endEditing(false)
+        loadingOverlay.hide()
     }
     
     // Redirect to the login page

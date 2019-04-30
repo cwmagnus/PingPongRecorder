@@ -14,7 +14,6 @@
 		BB0AF4F8226FAB77000E0810 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB0AF4F6226FAB77000E0810 /* Main.storyboard */; };
 		BB0AF4FD226FAB78000E0810 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB0AF4FB226FAB78000E0810 /* LaunchScreen.storyboard */; };
 		BB0AF517226FD907000E0810 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0AF516226FD907000E0810 /* LoginVC.swift */; };
-		BB4EAD8922709E9800E2CB3F /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4EAD8822709E9800E2CB3F /* ProfileVC.swift */; };
 		BB4EAD902270A32100E2CB3F /* UserValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4EAD8F2270A32100E2CB3F /* UserValidatorTests.swift */; };
 		BB4EAD922270AB8700E2CB3F /* AddGameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4EAD912270AB8700E2CB3F /* AddGameVC.swift */; };
 		BB4EAD9422738B0200E2CB3F /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4EAD9322738B0200E2CB3F /* RegisterVC.swift */; };
@@ -25,6 +24,7 @@
 		BB5B1E6E2277FD4C007F517E /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5B1E6D2277FD4C007F517E /* Game.swift */; };
 		BB5B1E702277FD62007F517E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5B1E6F2277FD62007F517E /* User.swift */; };
 		BB5B1E7222786EDE007F517E /* UserValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5B1E7122786EDE007F517E /* UserValidator.swift */; };
+		BB5B1E752278899E007F517E /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5B1E742278899E007F517E /* Authentication.swift */; };
 		BB85581322776618008FECC0 /* Main.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB85581222776618008FECC0 /* Main.xcassets */; };
 		BB855815227769AB008FECC0 /* TitleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB855814227769AB008FECC0 /* TitleVC.swift */; };
 		F824BF41E30FC6272A3238A9 /* Pods_PingPongRecorderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52A484FDE01ED629195C42B4 /* Pods_PingPongRecorderTests.framework */; };
@@ -54,7 +54,6 @@
 		BB0AF503226FAB78000E0810 /* PingPongRecorderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PingPongRecorderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB0AF509226FAB78000E0810 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB0AF516226FD907000E0810 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
-		BB4EAD8822709E9800E2CB3F /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		BB4EAD8F2270A32100E2CB3F /* UserValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserValidatorTests.swift; sourceTree = "<group>"; };
 		BB4EAD912270AB8700E2CB3F /* AddGameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGameVC.swift; sourceTree = "<group>"; };
 		BB4EAD9322738B0200E2CB3F /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
@@ -65,6 +64,7 @@
 		BB5B1E6D2277FD4C007F517E /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		BB5B1E6F2277FD62007F517E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		BB5B1E7122786EDE007F517E /* UserValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserValidator.swift; sourceTree = "<group>"; };
+		BB5B1E742278899E007F517E /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 		BB801C7A90E0FF4915DE1471 /* Pods-PingPongRecorderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PingPongRecorderTests.debug.xcconfig"; path = "Target Support Files/Pods-PingPongRecorderTests/Pods-PingPongRecorderTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BB85581222776618008FECC0 /* Main.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Main.xcassets; sourceTree = "<group>"; };
 		BB855814227769AB008FECC0 /* TitleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleVC.swift; sourceTree = "<group>"; };
@@ -124,6 +124,7 @@
 				BB0AF4FB226FAB78000E0810 /* LaunchScreen.storyboard */,
 				BB0AF4FE226FAB78000E0810 /* Info.plist */,
 				BB85581222776618008FECC0 /* Main.xcassets */,
+				BB5B1E742278899E007F517E /* Authentication.swift */,
 			);
 			path = PingPongRecorder;
 			sourceTree = "<group>";
@@ -140,10 +141,9 @@
 		BB0AF512226FAF5B000E0810 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				BB0AF4F4226FAB77000E0810 /* LeaderboardVC.swift */,
 				BB0AF4F2226FAB77000E0810 /* GamesVC.swift */,
+				BB0AF4F4226FAB77000E0810 /* LeaderboardVC.swift */,
 				BB0AF516226FD907000E0810 /* LoginVC.swift */,
-				BB4EAD8822709E9800E2CB3F /* ProfileVC.swift */,
 				BB4EAD912270AB8700E2CB3F /* AddGameVC.swift */,
 				BB4EAD9322738B0200E2CB3F /* RegisterVC.swift */,
 				BB855814227769AB008FECC0 /* TitleVC.swift */,
@@ -376,13 +376,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB5B1E702277FD62007F517E /* User.swift in Sources */,
-				BB4EAD8922709E9800E2CB3F /* ProfileVC.swift in Sources */,
 				BB5B1E6B2277FD0F007F517E /* LeaderboardCell.swift in Sources */,
 				BB5B1E7222786EDE007F517E /* UserValidator.swift in Sources */,
 				BB4EAD9422738B0200E2CB3F /* RegisterVC.swift in Sources */,
 				BB855815227769AB008FECC0 /* TitleVC.swift in Sources */,
 				BB5B1E692277FCF1007F517E /* GameCell.swift in Sources */,
 				BB5B1E652277EEC0007F517E /* LoadingOverlayView.swift in Sources */,
+				BB5B1E752278899E007F517E /* Authentication.swift in Sources */,
 				BB0AF517226FD907000E0810 /* LoginVC.swift in Sources */,
 				BB5B1E6E2277FD4C007F517E /* Game.swift in Sources */,
 				BB0AF4F5226FAB77000E0810 /* LeaderboardVC.swift in Sources */,

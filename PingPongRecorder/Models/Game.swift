@@ -6,4 +6,9 @@
 //  Copyright © 2019 Chris Magnuson. All rights reserved.
 //
 
-import Foundation
+// Game data structure
+struct Game {
+    let title: String!
+    let userScore: Int!
+    let opponentScore: Int!
+}

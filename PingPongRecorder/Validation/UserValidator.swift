@@ -10,6 +10,17 @@ import Foundation
 
 // Checks if usernames passwords or emails are correctly formatted
 class UserValidator {
+    
+    // Check if all fields are valid
+    public func isValid(username: String, email: String, password: String) -> Bool {
+        return isValidUsername(username: username) && isValidEmail(email: email) && isValidPassword(password: password)
+    }
+    
+    // Check if username and password are valid
+    public func isValid(username: String, password: String) -> Bool {
+        return isValidUsername(username: username) && isValidPassword(password: password)
+    }
+    
     // Check if the username is valid
     public func isValidUsername(username: String) -> Bool {
         let containsWhiteSpace = username.rangeOfCharacter(from: .whitespacesAndNewlines) != nil
