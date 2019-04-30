@@ -25,6 +25,8 @@
 		BB5B1E702277FD62007F517E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5B1E6F2277FD62007F517E /* User.swift */; };
 		BB5B1E7222786EDE007F517E /* UserValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5B1E7122786EDE007F517E /* UserValidator.swift */; };
 		BB5B1E752278899E007F517E /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5B1E742278899E007F517E /* Authentication.swift */; };
+		BB5B1E772278A0D7007F517E /* GameValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5B1E762278A0D7007F517E /* GameValidator.swift */; };
+		BB5B1E792278B77A007F517E /* GameValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5B1E782278B77A007F517E /* GameValidationTests.swift */; };
 		BB85581322776618008FECC0 /* Main.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB85581222776618008FECC0 /* Main.xcassets */; };
 		BB855815227769AB008FECC0 /* TitleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB855814227769AB008FECC0 /* TitleVC.swift */; };
 		F824BF41E30FC6272A3238A9 /* Pods_PingPongRecorderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52A484FDE01ED629195C42B4 /* Pods_PingPongRecorderTests.framework */; };
@@ -65,6 +67,8 @@
 		BB5B1E6F2277FD62007F517E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		BB5B1E7122786EDE007F517E /* UserValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserValidator.swift; sourceTree = "<group>"; };
 		BB5B1E742278899E007F517E /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		BB5B1E762278A0D7007F517E /* GameValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameValidator.swift; sourceTree = "<group>"; };
+		BB5B1E782278B77A007F517E /* GameValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameValidationTests.swift; sourceTree = "<group>"; };
 		BB801C7A90E0FF4915DE1471 /* Pods-PingPongRecorderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PingPongRecorderTests.debug.xcconfig"; path = "Target Support Files/Pods-PingPongRecorderTests/Pods-PingPongRecorderTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BB85581222776618008FECC0 /* Main.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Main.xcassets; sourceTree = "<group>"; };
 		BB855814227769AB008FECC0 /* TitleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleVC.swift; sourceTree = "<group>"; };
@@ -134,6 +138,7 @@
 			children = (
 				BB0AF509226FAB78000E0810 /* Info.plist */,
 				BB4EAD8F2270A32100E2CB3F /* UserValidatorTests.swift */,
+				BB5B1E782278B77A007F517E /* GameValidationTests.swift */,
 			);
 			path = PingPongRecorderTests;
 			sourceTree = "<group>";
@@ -175,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				BB5B1E7122786EDE007F517E /* UserValidator.swift */,
+				BB5B1E762278A0D7007F517E /* GameValidator.swift */,
 			);
 			path = Validation;
 			sourceTree = "<group>";
@@ -379,6 +385,7 @@
 				BB5B1E6B2277FD0F007F517E /* LeaderboardCell.swift in Sources */,
 				BB5B1E7222786EDE007F517E /* UserValidator.swift in Sources */,
 				BB4EAD9422738B0200E2CB3F /* RegisterVC.swift in Sources */,
+				BB5B1E772278A0D7007F517E /* GameValidator.swift in Sources */,
 				BB855815227769AB008FECC0 /* TitleVC.swift in Sources */,
 				BB5B1E692277FCF1007F517E /* GameCell.swift in Sources */,
 				BB5B1E652277EEC0007F517E /* LoadingOverlayView.swift in Sources */,
@@ -396,6 +403,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB5B1E792278B77A007F517E /* GameValidationTests.swift in Sources */,
 				BB4EAD902270A32100E2CB3F /* UserValidatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -27,6 +27,13 @@ class GamesVC : UIViewController, UITableViewDataSource {
         refreshControl.addTarget(self, action: #selector(refreshTable(_:)), for: .valueChanged)
         gamesTable.dataSource = self
         gamesTable.addSubview(refreshControl)
+    }
+    
+    // Load content on appear
+    override func viewDidAppear(_ animated: Bool) {
+        
+        super.viewDidAppear(animated)
+        
         loadGameContent()
     }
     
@@ -85,8 +92,17 @@ class GamesVC : UIViewController, UITableViewDataSource {
                 }
                 gamesTable.reloadData()
             }
+            else if response.response?.statusCode == 404 {
+                // Welcome new users
+                let alert = UIAlertController(title: "Welcome!", message: "Click the plus to add a new game", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Dismiss", style: .default))
+                self.present(alert, animated: true, completion: nil)
+            }
             else {
                 // Show an error message
+                let errorAlert = UIAlertController(title: "Error Loading Games", message: jsonResponse["message"] as? String, preferredStyle: .alert)
+                errorAlert.addAction(UIAlertAction(title: "Dismiss", style: .default))
+                self.present(errorAlert, animated: true, completion: nil)
             }
         }
         
